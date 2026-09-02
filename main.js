@@ -19,7 +19,10 @@ client.once('clientReady', () => [
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
-  if (message.content.includes("https://cdn.discordapp.com/attachments/1519657113175986348/1522643260630237434/togif.gif" || "https://cdn.discordapp.com/attachments/1458159628373463192/1544722080094883960/cool_bear.gif")){
+  if (
+    message.content.includes("https://cdn.discordapp.com/attachments/1519657113175986348/1522643260630237434/togif.gif") || 
+    message.content.includes("https://cdn.discordapp.com/attachments/1458159628373463192/1544722080094883960/cool_bear.gif")){
+    
     console.log('Deleted message with medved Vlad');
     message.delete();
   } else {
